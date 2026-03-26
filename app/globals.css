@@ -1,13 +1,14 @@
 @import "../node_modules/tailwindcss/index.css";
 
 @theme {
-  --color-navy: #0f1f3d;
-  --color-navy-light: #1a3258;
-  --color-navy-dark: #080f1e;
-  --color-gold: #b8962e;
-  --color-gold-light: #d4af57;
-  --color-gold-pale: #f5e9c8;
-  --color-cream: #faf8f3;
+  --color-navy: #00431c;
+  --color-navy-light: #006030;
+  --color-navy-dark: #002d12;
+  --color-green: #008f39;
+  --color-gold: #c49520;
+  --color-gold-light: #dba832;
+  --color-gold-pale: #e8f5ee;
+  --color-cream: #f4fcf8;
   --font-serif: Georgia, "Times New Roman", serif;
   --font-sans: Inter, system-ui, sans-serif;
 }
@@ -18,8 +19,8 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: #faf8f3;
-  color: #0f1f3d;
+  background-color: #f4fcf8;
+  color: #00431c;
 }
 
 /* WhatsApp pulse */
@@ -37,7 +38,7 @@ body {
 }
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(15, 31, 61, 0.13);
+  box-shadow: 0 16px 40px rgba(0, 67, 28, 0.13);
 }
 
 /* Section divider line */
@@ -45,7 +46,7 @@ body {
   display: block;
   width: 56px;
   height: 3px;
-  background-color: #b8962e;
+  background-color: #c49520;
   border-radius: 2px;
 }
 .gold-line-center {
