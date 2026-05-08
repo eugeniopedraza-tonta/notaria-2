@@ -5,8 +5,6 @@
   --color-navy-light: #006030;
   --color-navy-dark: #002d12;
   --color-green: #008f39;
-  --color-gold: #c49520;
-  --color-gold-light: #dba832;
   --color-gold-pale: #e8f5ee;
   --color-cream: #f4fcf8;
   --font-serif: Georgia, "Times New Roman", serif;
@@ -20,7 +18,7 @@ html {
 body {
   font-family: var(--font-sans);
   background-color: #f4fcf8;
-  color: #00431c;
+  color: white;
 }
 
 /* WhatsApp pulse */
@@ -46,7 +44,7 @@ body {
   display: block;
   width: 56px;
   height: 3px;
-  background-color: #c49520;
+  background-color: #008f39;
   border-radius: 2px;
 }
 .gold-line-center {

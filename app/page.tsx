@@ -152,35 +152,35 @@ function Hero() {
       <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c49520' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#00431c]/50 via-transparent to-[#00431c]/80" />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#c49520]/50 bg-[#c49520]/10 text-[#dba832] text-sm font-medium tracking-widest uppercase mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/30 bg-white/10 text-white text-sm font-medium tracking-widest uppercase mb-8">
           <Award className="w-4 h-4" />
           Desde 1972
         </div>
 
         <h1 className="text-white font-bold mb-3" style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.8rem, 5vw, 3.5rem)", lineHeight: 1.15 }}>
           Notaría Pública
-          <span className="block text-[#dba832]">Número 2</span>
+          <span className="block text-white">Número 2</span>
         </h1>
 
-        <div className="w-16 h-0.5 bg-[#c49520] mx-auto my-6" />
+        <div className="w-16 h-0.5 bg-white mx-auto my-6" />
 
         <p className="text-white/75 text-lg mb-2 tracking-wide">
           Lic. Raúl Ricardo Pedraza Rodríguez
         </p>
-        <p className="text-[#dba832]/80 text-sm uppercase tracking-widest mb-1">
+        <p className="text-white/80 text-sm uppercase tracking-widest mb-1">
           Notario Público Titular
         </p>
-        <p className="text-white/60 text-sm mb-1">
+        <p className="text-white/75 text-lg mb-1">
           Lic. Jorge Iván Pedraza Rodríguez
         </p>
-        <p className="text-white/50 text-xs uppercase tracking-widest mb-10">
+        <p className="text-white/50 text-sm uppercase tracking-widest mb-10">
           Notario Público Suplente
         </p>
 
@@ -191,7 +191,7 @@ function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#servicios"
-            className="px-8 py-3.5 rounded-full bg-[#c49520] text-white font-semibold hover:bg-[#dba832] transition-all duration-200 shadow-lg hover:shadow-[#c49520]/30 hover:shadow-xl"
+            className="px-8 py-3.5 rounded-full bg-white text-[#00431c] font-semibold hover:bg-white/90 transition-all duration-200 shadow-lg hover:shadow-white/20 hover:shadow-xl"
           >
             Nuestros Servicios
           </a>
@@ -207,7 +207,7 @@ function Hero() {
       {/* Scroll hint */}
       <a
         href="#notario"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 hover:text-[#dba832] transition-colors flex flex-col items-center gap-1 text-xs"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 hover:text-white transition-colors flex flex-col items-center gap-1 text-xs"
       >
         <span className="tracking-widest uppercase">Conoce más</span>
         <ChevronDown className="w-5 h-5 animate-bounce" />
@@ -315,52 +315,52 @@ function CurriculumSection() {
     <section id="curriculum" className="py-20 bg-[#008f39]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-[#dba832]/70 uppercase tracking-widest text-xs font-semibold">
+          <span className="text-white/70 uppercase tracking-widest text-xs font-semibold">
             Nuestro Equipo
           </span>
           <h2 className="mt-3 mb-2 text-3xl font-bold text-white" style={{ fontFamily: "Georgia, serif" }}>
             Curriculum Vitae
           </h2>
-          <span className="gold-line gold-line-center block mb-6" />
+          <span className="gold-line gold-line-center block mb-6" style={{ backgroundColor: 'white' }} />
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Titular */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/8 transition-colors">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-full bg-white/15 border-2 border-[#c49520] flex items-center justify-center text-white font-bold text-xl shrink-0" style={{ fontFamily: "Georgia, serif" }}>
+              <div className="w-14 h-14 rounded-full bg-white/15 border-2 border-white/50 flex items-center justify-center text-white font-bold text-xl shrink-0" style={{ fontFamily: "Georgia, serif" }}>
                 RP
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg leading-tight" style={{ fontFamily: "Georgia, serif" }}>
                   Lic. Raúl Ricardo Pedraza Rodríguez
                 </h3>
-                <span className="text-[#dba832] text-sm uppercase tracking-wider">Notario Público Titular</span>
+                <span className="text-white text-sm uppercase tracking-wider">Notario Público Titular</span>
               </div>
             </div>
             <ul className="space-y-3 text-white/70 text-sm">
               <li className="flex gap-3">
-                <BookOpen className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <BookOpen className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Licenciatura en Derecho — Universidad de Monterrey (1976–1980)</span>
               </li>
               <li className="flex gap-3">
-                <Award className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Award className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Estudios de Derecho Fiscal — Facultad Libre de Derecho de Monterrey</span>
               </li>
               <li className="flex gap-3">
-                <Briefcase className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Briefcase className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>19 años en la Notaría No. 2, inicialmente como pasante y abogado auxiliar</span>
               </li>
               <li className="flex gap-3">
-                <Scale className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Scale className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Autorización como Notario Suplente: 1995</span>
               </li>
               <li className="flex gap-3">
-                <Scale className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Scale className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Autorización como Notario Titular: 2003</span>
               </li>
               <li className="flex gap-3">
-                <Users className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Users className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Miembro de la Asociación Nacional del Notario Mexicano y del Colegio de Notarios Públicos de Nuevo León</span>
               </li>
             </ul>
@@ -376,32 +376,32 @@ function CurriculumSection() {
                 <h3 className="text-white font-bold text-lg leading-tight" style={{ fontFamily: "Georgia, serif" }}>
                   Lic. Jorge Iván Pedraza Rodríguez
                 </h3>
-                <span className="text-[#dba832] text-sm uppercase tracking-wider">Notario Público Suplente</span>
+                <span className="text-white text-sm uppercase tracking-wider">Notario Público Suplente</span>
               </div>
             </div>
             <ul className="space-y-3 text-white/70 text-sm">
               <li className="flex gap-3">
-                <BookOpen className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <BookOpen className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Licenciatura en Derecho — Universidad de Monterrey (1988)</span>
               </li>
               <li className="flex gap-3">
-                <Award className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Award className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Diplomado en Derecho Constitucional — Universidad Panamericana</span>
               </li>
               <li className="flex gap-3">
-                <Briefcase className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Briefcase className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Abogado auxiliar y litigante civil, mercantil y familiar (1991–2001)</span>
               </li>
               <li className="flex gap-3">
-                <Briefcase className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Briefcase className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Director Regional en el Servicio de Administración Tributaria (2001–2006)</span>
               </li>
               <li className="flex gap-3">
-                <Briefcase className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Briefcase className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Director Fiduciario Ejecutivo en el Servicio de Administración y Enajenación de Bienes (2007)</span>
               </li>
               <li className="flex gap-3">
-                <Scale className="w-4 h-4 text-[#c49520] shrink-0 mt-0.5" />
+                <Scale className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                 <span>Abogado auxiliar en Notaría a partir de 2008</span>
               </li>
             </ul>
@@ -540,13 +540,13 @@ function ContactoSection() {
     <section id="contacto" className="py-20 bg-[#008f39]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-[#dba832]/70 uppercase tracking-widest text-xs font-semibold">
+          <span className="text-white/70 uppercase tracking-widest text-xs font-semibold">
             Estamos aquí para ayudarle
           </span>
           <h2 className="mt-3 mb-2 text-3xl font-bold text-white" style={{ fontFamily: "Georgia, serif" }}>
             Contáctenos
           </h2>
-          <span className="gold-line gold-line-center block mb-6" />
+          <span className="gold-line gold-line-center block mb-6" style={{ backgroundColor: 'white' }} />
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -573,13 +573,13 @@ function ContactoSection() {
               <div>
                 <div className="text-white font-semibold mb-1">Teléfonos</div>
                 <div className="space-y-1 text-sm">
-                  <a href="tel:+528183425220" className="block text-white/65 hover:text-[#dba832] transition-colors">
+                  <a href="tel:+528183425220" className="block text-white/65 hover:text-white transition-colors">
                     +52 (81) 83-42-5220
                   </a>
-                  <a href="tel:+528183438025" className="block text-white/65 hover:text-[#dba832] transition-colors">
+                  <a href="tel:+528183438025" className="block text-white/65 hover:text-white transition-colors">
                     +52 (81) 83-43-8025
                   </a>
-                  <a href="tel:+528183406667" className="block text-white/65 hover:text-[#dba832] transition-colors">
+                  <a href="tel:+528183406667" className="block text-white/65 hover:text-white transition-colors">
                     +52 (81) 83-40-6667
                   </a>
                 </div>
@@ -611,7 +611,7 @@ function ContactoSection() {
                 <div className="text-white font-semibold mb-1">Correo Electrónico</div>
                 <a
                   href="mailto:informes@notaria2mty.com"
-                  className="text-white/65 hover:text-[#dba832] transition-colors text-sm"
+                  className="text-white/65 hover:text-white transition-colors text-sm"
                 >
                   informes@notaria2mty.com
                 </a>
@@ -647,7 +647,7 @@ function ContactoSection() {
                   type="text"
                   required
                   placeholder="Su nombre"
-                  className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#c49520] transition-colors"
+                  className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-white/50 transition-colors"
                 />
               </div>
               <div>
@@ -655,7 +655,7 @@ function ContactoSection() {
                 <input
                   type="tel"
                   placeholder="Su teléfono"
-                  className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#c49520] transition-colors"
+                  className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-white/50 transition-colors"
                 />
               </div>
             </div>
@@ -665,12 +665,12 @@ function ContactoSection() {
                 type="email"
                 required
                 placeholder="su@correo.com"
-                className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#c49520] transition-colors"
+                className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-white/50 transition-colors"
               />
             </div>
             <div>
               <label className="block text-white/60 text-xs uppercase tracking-wider mb-1.5">Servicio de Interés</label>
-              <select className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white/70 text-sm focus:outline-none focus:border-[#c49520] transition-colors">
+              <select className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white/70 text-sm focus:outline-none focus:border-white/50 transition-colors">
                 <option value="" className="bg-[#006b2e]">Seleccione un servicio</option>
                 <option value="inmuebles" className="bg-[#006b2e]">Compraventa de Inmuebles</option>
                 <option value="testamento" className="bg-[#006b2e]">Testamento</option>
@@ -685,12 +685,12 @@ function ContactoSection() {
                 rows={4}
                 required
                 placeholder="Describa brevemente su consulta..."
-                className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#c49520] transition-colors resize-none"
+                className="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-white/50 transition-colors resize-none"
               />
             </div>
             <button
               type="submit"
-              className="w-full py-3.5 rounded-full bg-[#c49520] text-white font-semibold hover:bg-[#dba832] transition-colors"
+              className="w-full py-3.5 rounded-full bg-white text-[#008f39] font-semibold hover:bg-white/90 transition-colors"
             >
               Enviar Consulta
             </button>
@@ -708,7 +708,7 @@ function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/40">
           <span>© {new Date().getFullYear()} Notaría Pública No. 2 — Monterrey, N.L. México.</span>
           <div className="flex items-center gap-6">
-            <a href="/privacidad" className="hover:text-[#dba832] transition-colors">
+            <a href="/privacidad" className="hover:text-white transition-colors">
               Aviso de Privacidad
             </a>
             <span>informes@notaria2mty.com</span>
