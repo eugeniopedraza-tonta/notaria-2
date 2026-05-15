@@ -39,12 +39,12 @@ export default function Navbar() {
           : "bg-[#008f39]/95"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="max-w-full mx-auto sm:px-6 lg:px-8 items-center">
+        <div className="flex h-16 md:h-20 w">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-3 group justify-start w-1/6"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center shrink-0">
@@ -61,7 +61,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="sm:flex hidden w-full justify-around items-center ">
             {navLinks.map((link) => (
               <button
                 key={link.href}
