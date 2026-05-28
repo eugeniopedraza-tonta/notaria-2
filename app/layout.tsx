@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import WhatsAppButton from "./components/WhatsAppButton";
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Notaría Pública No. 2 Monterrey | Lic. Raúl Ricardo Pedraza Rodríguez",
@@ -15,8 +23,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" className="h-full">
-      <body className="min-h-full flex flex-col">
+    <html lang="es" className={`h-full ${playfairDisplay.variable}`}>
+      <body className={`min-h-full flex flex-col ${playfairDisplay.className}`}>
         <Navbar />
         <main className="flex-1">{children}</main>
         <WhatsAppButton />

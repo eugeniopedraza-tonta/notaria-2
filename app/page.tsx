@@ -164,7 +164,7 @@ function Hero() {
           Desde 1972
         </div>
 
-        <h1 className="text-white font-bold mb-3" style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.8rem, 5vw, 3.5rem)", lineHeight: 1.15 }}>
+        <h1 className="text-white font-bold mb-3" style={{ fontSize: "clamp(1.8rem, 5vw, 3.5rem)", lineHeight: 1.15 }}>
           Notaría Pública
           <span className="block text-white">Número 2</span>
         </h1>
@@ -222,14 +222,14 @@ function NotarioSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-[#008f39] uppercase tracking-widest text-xs font-semibold">
+            <span className="text-[#255234] uppercase tracking-widest text-xs font-semibold">
               ¿Qué es un Notario Público?
             </span>
-            <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]" style={{ fontFamily: "Georgia, serif" }}>
+            <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]">
               Fe Pública al Servicio de la Sociedad
             </h2>
             <span className="gold-line block mb-6" />
-            <blockquote className="border-l-4 border-[#008f39] pl-5 mb-6 italic text-[#00431c]/70 leading-relaxed">
+            <blockquote className="border-l-4 border-[#255234] pl-5 mb-6 italic text-[#00431c]/70 leading-relaxed">
               "El Notario es un Licenciado en Derecho especializado, con alta formación jurídica, que interviene en los negocios comerciales y civiles como fedatario y consejero legal de los inversionistas, empresarios y particulares."
             </blockquote>
             <p className="text-[#00431c]/70 leading-relaxed mb-6">
@@ -237,7 +237,7 @@ function NotarioSection() {
             </p>
             <a
               href="#servicios"
-              className="inline-flex items-center gap-2 text-[#008f39] font-semibold hover:text-[#006030] transition-colors"
+              className="inline-flex items-center gap-2 text-[#255234] font-semibold hover:text-[#006030] transition-colors"
             >
               Ver nuestros servicios <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
             </a>
@@ -251,8 +251,8 @@ function NotarioSection() {
               { icon: Briefcase, label: "Especialización", desc: "Alta formación jurídica y fiscal" },
             ].map(({ icon: Icon, label, desc }) => (
               <div key={label} className="bg-[#f4fcf8] rounded-xl p-5 border border-[#e8f5ee]">
-                <div className="w-10 h-10 rounded-lg bg-[#008f39]/10 flex items-center justify-center mb-3">
-                  <Icon className="w-5 h-5 text-[#008f39]" />
+                <div className="w-10 h-10 rounded-lg bg-[#255234]/10 flex items-center justify-center mb-3">
+                  <Icon className="w-5 h-5 text-[#255234]" />
                 </div>
                 <div className="font-semibold text-[#00431c] text-sm mb-1">{label}</div>
                 <div className="text-[#00431c]/60 text-xs leading-relaxed">{desc}</div>
@@ -270,10 +270,10 @@ function ServiciosSection() {
     <section id="servicios" className="py-20 bg-[#f4fcf8]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-[#008f39] uppercase tracking-widest text-xs font-semibold">
+          <span className="text-[#255234] uppercase tracking-widest text-xs font-semibold">
             Lo que hacemos
           </span>
-          <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]" style={{ fontFamily: "Georgia, serif" }}>
+          <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]">
             Nuestros Servicios Notariales
           </h2>
           <span className="gold-line gold-line-center block mb-6" />
@@ -288,16 +288,16 @@ function ServiciosSection() {
               key={category}
               className="service-card bg-white rounded-2xl p-6 border border-[#e8f5ee] shadow-sm"
             >
-              <div className="w-11 h-11 rounded-xl bg-[#008f39] flex items-center justify-center mb-4">
+              <div className="w-11 h-11 rounded-xl bg-[#255234] flex items-center justify-center mb-4">
                 <Icon className="w-5 h-5 text-white" />
               </div>
-              <h3 className="font-bold text-[#00431c] text-base mb-3" style={{ fontFamily: "Georgia, serif" }}>
+              <h3 className="font-bold text-[#00431c] text-base mb-3">
                 {category}
               </h3>
               <ul className="space-y-1.5">
                 {items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-[#00431c]/65">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#008f39] shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#255234] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -312,13 +312,13 @@ function ServiciosSection() {
 
 function CurriculumSection() {
   return (
-    <section id="curriculum" className="py-20 bg-[#008f39]">
+    <section id="curriculum" className="py-20 bg-[#255234]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-white/70 uppercase tracking-widest text-xs font-semibold">
             Nuestro Equipo
           </span>
-          <h2 className="mt-3 mb-2 text-3xl font-bold text-white" style={{ fontFamily: "Georgia, serif" }}>
+          <h2 className="mt-3 mb-2 text-3xl font-bold text-white">
             Curriculum Vitae
           </h2>
           <span className="gold-line gold-line-center block mb-6" style={{ backgroundColor: 'white' }} />
@@ -328,11 +328,11 @@ function CurriculumSection() {
           {/* Titular */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/8 transition-colors">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-full bg-white/15 border-2 border-white/50 flex items-center justify-center text-white font-bold text-xl shrink-0" style={{ fontFamily: "Georgia, serif" }}>
+              <div className="w-14 h-14 rounded-full bg-white/15 border-2 border-white/50 flex items-center justify-center text-white font-bold text-xl shrink-0">
                 RP
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg leading-tight" style={{ fontFamily: "Georgia, serif" }}>
+                <h3 className="text-white font-bold text-lg leading-tight">
                   Lic. Raúl Ricardo Pedraza Rodríguez
                 </h3>
                 <span className="text-white text-sm uppercase tracking-wider">Notario Público Titular</span>
@@ -369,11 +369,11 @@ function CurriculumSection() {
           {/* Suplente */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/8 transition-colors">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-full bg-white/15 border-2 border-white/30 flex items-center justify-center text-white font-bold text-xl shrink-0" style={{ fontFamily: "Georgia, serif" }}>
+              <div className="w-14 h-14 rounded-full bg-white/15 border-2 border-white/30 flex items-center justify-center text-white font-bold text-xl shrink-0">
                 JP
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg leading-tight" style={{ fontFamily: "Georgia, serif" }}>
+                <h3 className="text-white font-bold text-lg leading-tight">
                   Lic. Jorge Iván Pedraza Rodríguez
                 </h3>
                 <span className="text-white text-sm uppercase tracking-wider">Notario Público Suplente</span>
@@ -417,10 +417,10 @@ function RequisitosSection() {
     <section id="requisitos" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-[#008f39] uppercase tracking-widest text-xs font-semibold">
+          <span className="text-[#255234] uppercase tracking-widest text-xs font-semibold">
             Documentación
           </span>
-          <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]" style={{ fontFamily: "Georgia, serif" }}>
+          <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]">
             Requisitos de Trámites
           </h2>
           <span className="gold-line gold-line-center block mb-6" />
@@ -437,36 +437,36 @@ function RequisitosSection() {
             >
               <summary className="flex items-center justify-between px-6 py-5 cursor-pointer hover:bg-[#e8f5ee]/50 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#008f39] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#255234] flex items-center justify-center shrink-0">
                     <FileText className="w-4 h-4 text-white" />
                   </div>
                   <span className="font-semibold text-[#00431c]">{tramite}</span>
                 </div>
-                <ChevronDown className="accordion-icon w-5 h-5 text-[#008f39] transition-transform duration-200 shrink-0" />
+                <ChevronDown className="accordion-icon w-5 h-5 text-[#255234] transition-transform duration-200 shrink-0" />
               </summary>
 
               <div className="px-6 pb-6 pt-2 grid sm:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#008f39] mb-3">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#255234] mb-3">
                     {vendedorLabel ?? "Vendedor"}
                   </h4>
                   <ul className="space-y-2">
                     {vendedor.map((req) => (
                       <li key={req} className="flex items-start gap-2 text-sm text-[#00431c]/70">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#008f39] shrink-0" />
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#255234] shrink-0" />
                         {req}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#008f39] mb-3">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#255234] mb-3">
                     {compradorLabel ?? "Comprador"}
                   </h4>
                   <ul className="space-y-2">
                     {comprador.map((req) => (
                       <li key={req} className="flex items-start gap-2 text-sm text-[#00431c]/70">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#008f39] shrink-0" />
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#255234] shrink-0" />
                         {req}
                       </li>
                     ))}
@@ -479,7 +479,7 @@ function RequisitosSection() {
 
         <p className="mt-8 text-center text-sm text-[#00431c]/50">
           ¿Necesita información sobre otros trámites?{" "}
-          <a href="#contacto" className="text-[#008f39] hover:underline font-medium">
+          <a href="#contacto" className="text-[#255234] hover:underline font-medium">
             Contáctenos
           </a>
           .
@@ -494,10 +494,10 @@ function MunicipiosSection() {
     <section id="municipios" className="py-20 bg-[#f4fcf8]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-[#008f39] uppercase tracking-widest text-xs font-semibold">
+          <span className="text-[#255234] uppercase tracking-widest text-xs font-semibold">
             Área de Servicio
           </span>
-          <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]" style={{ fontFamily: "Georgia, serif" }}>
+          <h2 className="mt-3 mb-2 text-3xl font-bold text-[#00431c]">
             Municipios Atendidos
           </h2>
           <span className="gold-line gold-line-center block mb-6" />
@@ -510,9 +510,9 @@ function MunicipiosSection() {
           {municipalities.map((mun) => (
             <div
               key={mun}
-              className="flex items-center gap-3 bg-white rounded-xl px-4 py-4 border border-[#e8f5ee] shadow-sm hover:border-[#008f39]/40 hover:shadow-md transition-all"
+              className="flex items-center gap-3 bg-white rounded-xl px-4 py-4 border border-[#e8f5ee] shadow-sm hover:border-[#255234]/40 hover:shadow-md transition-all"
             >
-              <MapPin className="w-4 h-4 text-[#008f39] shrink-0" />
+              <MapPin className="w-4 h-4 text-[#255234] shrink-0" />
               <span className="text-[#00431c] font-medium text-sm">{mun}</span>
             </div>
           ))}
@@ -537,13 +537,13 @@ function MunicipiosSection() {
 
 function ContactoSection() {
   return (
-    <section id="contacto" className="py-20 bg-[#008f39]">
+    <section id="contacto" className="py-20 bg-[#255234]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-white/70 uppercase tracking-widest text-xs font-semibold">
             Estamos aquí para ayudarle
           </span>
-          <h2 className="mt-3 mb-2 text-3xl font-bold text-white" style={{ fontFamily: "Georgia, serif" }}>
+          <h2 className="mt-3 mb-2 text-3xl font-bold text-white">
             Contáctenos
           </h2>
           <span className="gold-line gold-line-center block mb-6" style={{ backgroundColor: 'white' }} />
@@ -637,7 +637,7 @@ function ContactoSection() {
             onSubmit={(e) => e.preventDefault()}
             className="bg-white/5 border border-white/10 rounded-2xl p-8 space-y-5"
           >
-            <h3 className="text-white font-semibold text-lg" style={{ fontFamily: "Georgia, serif" }}>
+            <h3 className="text-white font-semibold text-lg">
               Envíenos un mensaje
             </h3>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -690,7 +690,7 @@ function ContactoSection() {
             </div>
             <button
               type="submit"
-              className="w-full py-3.5 rounded-full bg-white text-[#008f39] font-semibold hover:bg-white/90 transition-colors"
+              className="w-full py-3.5 rounded-full bg-white text-[#255234] font-semibold hover:bg-white/90 transition-colors"
             >
               Enviar Consulta
             </button>
@@ -703,7 +703,7 @@ function ContactoSection() {
 
 function Footer() {
   return (
-    <footer className="bg-[#006b2e] py-8 border-t border-white/10">
+    <footer className="bg-[#255234]/90 py-8 border-t border-white/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/40">
           <span>© {new Date().getFullYear()} Notaría Pública No. 2 — Monterrey, N.L. México.</span>

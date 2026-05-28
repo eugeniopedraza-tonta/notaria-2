@@ -4,11 +4,11 @@
   --color-navy: #00431c;
   --color-navy-light: #006030;
   --color-navy-dark: #002d12;
-  --color-green: #008f39;
+  --color-green: #255234;
   --color-gold-pale: #e8f5ee;
   --color-cream: #f4fcf8;
-  --font-serif: Georgia, "Times New Roman", serif;
-  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-playfair), Georgia, serif;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-playfair), Georgia, serif;
   background-color: #f4fcf8;
   color: white;
 }
@@ -44,7 +44,7 @@ body {
   display: block;
   width: 56px;
   height: 3px;
-  background-color: #008f39;
+  background-color: #255234;
   border-radius: 2px;
 }
 .gold-line-center {

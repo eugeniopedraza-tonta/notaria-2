@@ -8,20 +8,20 @@ export default function Privacidad() {
         <div className="mb-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm text-[#008f39] hover:text-[#dba832] transition-colors mb-6"
+            className="inline-flex items-center gap-2 text-sm text-[#255234] hover:text-[#dba832] transition-colors mb-6"
           >
             ← Regresar al inicio
           </Link>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-full bg-[#008f39] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-[#255234] flex items-center justify-center">
               <Scale className="w-5 h-5 text-white" />
             </div>
             <div className="text-sm text-[#00431c]/50 uppercase tracking-wider">Notaría Pública No. 2</div>
           </div>
-          <h1 className="text-3xl font-bold text-[#00431c] mb-2" style={{ fontFamily: "Georgia, serif" }}>
+          <h1 className="text-3xl font-bold text-[#00431c] mb-2">
             Aviso de Privacidad
           </h1>
-          <span className="block w-12 h-0.5 bg-[#008f39] mb-6" />
+          <span className="block w-12 h-0.5 bg-[#255234] mb-6" />
           <p className="text-sm text-[#00431c]/50">Última actualización: marzo de 2012</p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Privacidad() {
           </p>
 
           <section>
-            <h2 className="text-lg font-bold text-[#00431c] mb-2" style={{ fontFamily: "Georgia, serif" }}>
+            <h2 className="text-lg font-bold text-[#00431c] mb-2">
               Datos Personales Recabados
             </h2>
             <p>
@@ -48,7 +48,7 @@ export default function Privacidad() {
                 "Documentos de identidad oficial",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#008f39] shrink-0" />
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#255234] shrink-0" />
                   {item}
                 </li>
               ))}
@@ -56,7 +56,7 @@ export default function Privacidad() {
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-[#00431c] mb-2" style={{ fontFamily: "Georgia, serif" }}>
+            <h2 className="text-lg font-bold text-[#00431c] mb-2">
               Finalidad del Tratamiento
             </h2>
             <p>Los datos personales recabados son utilizados para:</p>
@@ -71,7 +71,7 @@ export default function Privacidad() {
                 "Verificar la información proporcionada",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#008f39] shrink-0" />
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#255234] shrink-0" />
                   {item}
                 </li>
               ))}
@@ -79,7 +79,7 @@ export default function Privacidad() {
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-[#00431c] mb-2" style={{ fontFamily: "Georgia, serif" }}>
+            <h2 className="text-lg font-bold text-[#00431c] mb-2">
               Transferencia de Datos
             </h2>
             <p>
@@ -88,7 +88,7 @@ export default function Privacidad() {
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-[#00431c] mb-2" style={{ fontFamily: "Georgia, serif" }}>
+            <h2 className="text-lg font-bold text-[#00431c] mb-2">
               Derechos ARCO
             </h2>
             <p>
